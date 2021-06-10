@@ -58,7 +58,3 @@ def rps():
             continue
     
 rps()
-
-    
-    
-    
