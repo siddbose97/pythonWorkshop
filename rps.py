@@ -5,7 +5,7 @@ def rps():
     computerScore = 0 #computer's score
 
     keepPlaying = True #do we want to keep playing?
-
+    badInputCounter = 0
     while keepPlaying == True: #if we want to keep playing, then keep looping
         playerChoice = input("Make a choice: rock, paper or scissors - ")#the input string
         
@@ -50,7 +50,7 @@ def rps():
             ScoreString = "Score is now " + str(myScore) + " for player and " + str(computerScore) + " for Computer!"
             print(ScoreString) #print the new score
 
-        checkIn = input("Do you want to keep playing: if yes, press any key, if no, type: no - ") #ask if want to keep playing
+        checkIn = str(input("Do you want to keep playing: if yes, press any key, if no, type: no - ")) #ask if want to keep playing
         
         if checkIn == "no": #check for response
             keepPlaying = False #set boolean to False: since loop only continues on True, this breaks the loop
