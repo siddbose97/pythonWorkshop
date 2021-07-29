@@ -20,7 +20,7 @@ def rps():
                 print(output)
                 continue
 
-        computerChoice = random.randrange(1,3) #let the computer randomly choose 1, 2, or 3
+        computerChoice = random.randint(1,3) #let the computer randomly choose 1, 2, or 3
         computerMappedChoices = {1:"rock", 2:"paper", 3:"scissors"} #let's convert a number to a choice
         computerChoiceString = computerMappedChoices[computerChoice] #plug the random number into the dictionary    
 
